@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<div id="application-root"></div>
+
+<script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+<script type="text/babel">
+
+//CSS
+//Prop to control student's name
+
+function App() {
+    return (
+    <div>
+        <header>
+            <h1>Sally Student</h1>
+            <h2><a href="mailto:sally.student@fake.email">sally.student@fake.email</a></h2>
+            <h3><a href="tel:+1-262-353-1696">1-262-353-1696</a></h3>
+        </header>
+
+        <main><img src="https://ia.media-imdb.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_UX214_CR0,0,214,317_AL_.jpg"></img></main>
+
+        <section>
+            <h4>EDUCATION</h4>
+            <h5>Super Fake University</h5>
+            <h6><em>B.A. - Useless Arts</em> | September 2000 - May 2004</h6>
+        </section>
+
+        <section>
+            <h4>EXPERIENCE</h4>
+            
+            <h5>Super Fake Company</h5>
+            <h6>Marketing Coordinator | September 2004 - March 2010</h6>
+            <p>This is a job description. It's super interesting and important, and also really necessary to make sure the text is here to fill space. Marketing is pretty much the same. Super cool, super relevant, and super important. 10,000 numbers here.</p>
+            
+            <h5>Other Not Real Firm</h5>
+            <h6>Sr. Marketing Coorindator | March 2010 - Present</h6>
+            <p>This is another job description. It's a little more interesting and important-sounding than the last one above. It's also really necessary to make sure the text is here to fill even more space. Marketing on a senior level is basically the same thing. Less cool, less relevant. That's why I'm back in school. 20,000 numbers here, with hopeful follow-up.</p>
+        </section>
+
+        <address><a href="http://github.io/nickwoodswi">http://github.io/nickwoodswi</a></address>
+
+    </div>
+    );
+}
+
+ReactDOM.render(
+    <App />,
+    document.querySelector('#application-root')
+);
+
+</script>
+
+</body>
+</html>
